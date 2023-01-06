@@ -9,10 +9,23 @@ const lastName = 'Abbadi';
 
 
 //JSX element, header
-const header = () => {
-    return (<header >
-        <div className='header-wrapper' >
+const Header = () => {
+    return (
+        <header>
+            <div className='header-wrapper' >
+                <h1>{welcome}</h1>
+                <h2>{title}</h2>
+                <h3>{subtitle}</h3>
 
-        </div> </header >
+                <p>
+                    Name : {firstName} {lastName}
+                </p>
+            </div>
+        </header>
     )
 }
+
+const rootElement = document.getElementById('root');
+
+//we render the App component using the ReactDOM package
+ReactDOM.render(<Header />, rootElement)
