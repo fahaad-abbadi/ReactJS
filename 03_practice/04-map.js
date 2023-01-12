@@ -28,7 +28,7 @@ const Countries = ({ countries }) => {
 const App = () => (
     <div className="container">
         <div>
-            <h1>Countries list</h1>
+            <h1>Countries</h1>
             <Countries countries={countries} />
         </div>
     </div>
