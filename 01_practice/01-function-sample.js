@@ -31,8 +31,31 @@ const Car = () => {
 // likewise, you can create several function(components)
 
 
+//injecting data
+//we can inject data in the function components, we have to use this thing '{}'
+//'{}' they kinda are like variables, so yeah!
+
+// let's keep these two variables
+const firstName = 'Fahaad';
+const lastName = 'Abbadi';
+
+//JSX element, header
+const Name = () => {
+    return (
+        <header>
+            <div className='details' >
+                <h3>
+                    Name : {firstName} {lastName}
+                </h3>
+            </div>
+        </header>
+    )
+}
+
+
+
 //like function parameter or arguments, we can also use a thing called 'props'
-// it means properties
+//it means properties
 
 //Header Component
 const GetUserInfo = (props) => {
@@ -73,6 +96,7 @@ const App = () => {
     <div className="app">
       <Car/>
       <Result/>
+      <Name/>
       <Sample/>
       <Header welcome='This is some ReactJS thing' />
       <GetUserInfo firstName = "fahaad" lastName = "abbadi" title="ReactJS" country = "India"/>
