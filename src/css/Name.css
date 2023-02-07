@@ -1,0 +1,7 @@
+.hospital-name{
+    display : flex;
+    justify-content: center;
+    font-size: large;
+    margin-bottom: 20px;
+    border: 10px solid red;
+}
